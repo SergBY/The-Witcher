@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.css/animate.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -37,8 +39,8 @@
     <div class="container">
       <div class="main-content">
         <div class="content">
-          <span class="genre">2019, фэнтези</span>
-          <div class="rating">
+          <span class="genre animate__animated animate__zoomIn">2019, фэнтези</span>
+          <div class="rating animate__animated animate__zoomIn">
             <div class="rating-stars">
               <img src="img/star.svg" alt="star" class="star" />
               <img src="img/star.svg" alt="star" class="star" />
@@ -53,53 +55,48 @@
             </div>
             <div class="rating-number">7/10</div>
           </div>
-          <h1 class="main-title">Ведьмак</h1>
-          <p class="main-description">
+          <h1 class="main-title animate__animated animate__zoomIn">Ведьмак</h1>
+          <p class="main-description animate__animated animate__zoomIn">
             Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади
             по кличке Плотва путешествует по Континенту. За тугой мешочек
             чеканных монет этот мужчина избавит вас от всякой настырной
             нечисти — хоть от чудищ болотных, оборотней и даже заколдованных
             принцесс.
           </p>
-          <button class="button">Смотреть онлайн</button>
+          <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="button animate__animated animate__zoomIn">Смотреть трейлер</a>
         </div>
         <!-- /.content -->
-        <button class="play">
+        <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="play">
           <img src="img/play.svg" alt="play" class="play-img" />
-        </button>
+        </a>
         <!-- /.play -->
       </div>
       <!-- /.main-content -->
-
-      <!-- Slider main container -->
-<div class="series">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card series-1">
-          <span class="card-subtitle">Серия #1</span>
-          <h2 class="card-title">Начало конца</h2>
+      <div class="series">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="card series-1">
+                <span class="card-subtitle">Серия #1</span>
+                <h2 class="card-title">Начало конца</h2>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="card series-2">
+                <span class="card-subtitle">Серия #2</span>
+                <h2 class="card-title">Четыре знака</h2>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="card series-2">
+                <span class="card-subtitle">Серия #3</span>
+                <h2 class="card-title">Четыре знака</h2>
+              </a>
+            </div>
+          </div>
         </div>
+        <button class="arrow"></button>
       </div>
-      <div class="swiper-slide">
-        <div class="card series-2">
-          <span class="card-subtitle">Серия #2</span>
-          <h2 class="card-title">Четыре знака</h2>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card series-2">
-          <span class="card-subtitle">Серия #3</span>
-          <h2 class="card-title">Четыре знака</h2>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-  <button class="arrow"></button>
-</div>
-
       <!-- /.container -->
   </main>
   <footer class="footer">
@@ -120,6 +117,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
